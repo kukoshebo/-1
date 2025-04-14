@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ZILO_FF - القناة الرسمية</title>
+    <meta name="description" content="أهلاً بك في الموقع الرسمي لقناة ZILO_FF 🔥 تابعني على يوتيوب لأفضل محتوى فري فاير!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- زر تبديل الوضع -->
+    <button id="toggle-dark-mode" aria-label="تبديل الوضع">🌙</button>
+
+    <header>
+        <h1>🔥 ZILO_FF 🔥</h1>
+        <p>أهلاً وسهلاً في عالمي! محتوى فري فاير، تحديات، وفلوقات رهيبة! 😍</p>
+        <a href="https://www.youtube.com/@ZILO_FF" target="_blank">اشترك في القناة الآن! 🎥</a>
+    </header>
+
+    <section id="about">
+        <h2>من أنا؟</h2>
+        <p>أنا ZILO، صانع محتوى فري فاير وكل شيء ممتع وجنوني في عالم الألعاب! 🎮✨</p>
+    </section>
+
+    <section id="videos">
+        <h2>أحدث الفيديوهات</h2>
+        <p>تابعني باستمرار لأحدث الفيديوهات، التحديات، والضحك! 💯</p>
+        <a href="https://www.youtube.com/@ZILO_FF" target="_blank">شوف الفيديوهات الحين 🔥</a>
+    </section>
+
+    <section id="contact">
+        <h2>تواصل معي</h2>
+        <p>حاب تتعاون أو تتواصل؟ راسلني على الإيميل 👇</p>
+        <a href="mailto:msb201218@gmail.com">msb201218@gmail.com</a>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © ZILO_FF</p>
+    </footer>
+
+    <!-- سكربت التبديل -->
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            toggleButton.textContent = body.classList.contains('light-mode') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
